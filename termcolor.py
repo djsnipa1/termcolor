@@ -112,8 +112,13 @@ def colored(text, color=None, on_color=None, attrs=None):
         bold, dark, underline, blink, reverse, concealed.
 
     Example:
+<<<<<<< HEAD
         colored('Hello, World!', 'red', 'on_black', ['bold', 'blink'])
         colored('Hello, World!', 191, 182)
+=======
+        colored('Hello, World!', 'red', 'on_grey', ['reverse', 'blink'])
+        colored('Hello, World!', 'green')
+>>>>>>> patch-1
     """
     if os.getenv('ANSI_COLORS_DISABLED') is None and sys.stdout.isatty():
         fmt16_str = '\033[%sm%s'
